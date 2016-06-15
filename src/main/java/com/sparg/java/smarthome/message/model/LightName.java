@@ -20,7 +20,7 @@ public enum LightName {
     public static LightName getLightName(String lightNameSlot) {
         if(lightNameSlot != null) {
             lightNameSlot = lightNameSlot.toLowerCase();
-            if(lightNameSlot.contains("living")) {
+            if(lightNameSlot.contains("living") || lightNameSlot.contains("tv") || lightNameSlot.contains("hall")) {
                 return LIVING_ROOM_LIGHT;
             } else if(lightNameSlot.contains("bed")) {
                 return BED_ROOM_LIGHT;
